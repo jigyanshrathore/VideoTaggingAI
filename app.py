@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
 from frameprocess import extract_frames, analyze_frames_with_vision, generate_story
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"C:\Users\HP\Desktop\aivideotagging\majestic-cairn-442720-q2-1a0c8e4b7aba.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"yourpathofapikey.json"
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './video_data'
